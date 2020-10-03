@@ -6,7 +6,7 @@ interface Product {
   name: string;
   description: string;
   price: number;
-  formattedValue: number;
+  formattedPrice: number;
   thumbnail_url: string;
 }
 
@@ -38,7 +38,6 @@ export const FoodsContainer = styled.View`
 `;
 
 export const FoodList = styled(FlatList as new () => FlatList<Product>)`
-  flex: 1;
   padding: 0 20px;
 
   margin-top: 16px;
